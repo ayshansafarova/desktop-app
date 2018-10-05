@@ -1,0 +1,10 @@
+C:\Users\admin\source\repos\Punishment\Punishment\bin\Debug\Punishment.exe.config
+C:\Users\admin\source\repos\Punishment\Punishment\bin\Debug\Punishment.exe
+C:\Users\admin\source\repos\Punishment\Punishment\bin\Debug\Punishment.pdb
+C:\Users\admin\source\repos\Punishment\Punishment\obj\Debug\Punishment.csprojAssemblyReference.cache
+C:\Users\admin\source\repos\Punishment\Punishment\obj\Debug\Punishment.Form1.resources
+C:\Users\admin\source\repos\Punishment\Punishment\obj\Debug\Punishment.Properties.Resources.resources
+C:\Users\admin\source\repos\Punishment\Punishment\obj\Debug\Punishment.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\Punishment\Punishment\obj\Debug\Punishment.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Punishment\Punishment\obj\Debug\Punishment.exe
+C:\Users\admin\source\repos\Punishment\Punishment\obj\Debug\Punishment.pdb
