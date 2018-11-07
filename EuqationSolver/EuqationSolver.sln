@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EuqationSolver", "EuqationSolver\EuqationSolver.csproj", "{A2E7CD60-F96C-4E31-BE61-1DC77399FC4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2E7CD60-F96C-4E31-BE61-1DC77399FC4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E7CD60-F96C-4E31-BE61-1DC77399FC4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E7CD60-F96C-4E31-BE61-1DC77399FC4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E7CD60-F96C-4E31-BE61-1DC77399FC4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDD54C2A-C5E2-43CF-86C3-23D97CCDB8EA}
+	EndGlobalSection
+EndGlobal
