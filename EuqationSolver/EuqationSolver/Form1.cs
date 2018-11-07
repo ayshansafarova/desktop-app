@@ -26,6 +26,9 @@ namespace EuqationSolver
 
         private void button1_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+            listBox3.Items.Clear();
             rnd = Convert.ToInt32(textBox1.Text);
             for(int i = 0; i < rnd; i++)
             {
@@ -112,8 +115,8 @@ namespace EuqationSolver
             label7.Text = aT + "X^2 + " + bT + "X + " + cT + " = 0";
 
             int a = Convert.ToInt32(aT);
-            int b = Convert.ToInt32(aT);
-            int c = Convert.ToInt32(aT);
+            int b = Convert.ToInt32(bT);
+            int c = Convert.ToInt32(cT);
 
             label4.Text = Convert.ToString(findDiscriminant(a, b, c));
             label5.Text = Convert.ToString(findFirstX(a, b, c));
@@ -156,30 +159,30 @@ namespace EuqationSolver
 
         private void button6_Click(object sender, EventArgs e)
         {
-            //Label[] labels = new Label[n];
-            //int i = listBox1.Items.Count * listBox2.Items.Count * listBox3.Items.Count;
-            for (int x = 1; x <= listBox1.Items.Count; x++)
+            int left = 3;
+            int top = 3;
+            for (int x = 0; x < rnd; x++)
             {
-                Label[] labels = new Label[x];
-                labels[x].Text = listBox1.GetItemText(listBox1.Items[x]);
-                A = Convert.ToInt32(labels[x].Text);
-                for (int y = 1; y <= listBox2.Items.Count; y++)
-                {
-                    Label[] labels2 = new Label[y];
-                    labels2[y].Text = listBox2.GetItemText(listBox2.Items[y]);
-                    B = Convert.ToInt32(labels2[y].Text);
-                    for (int z = 1; z <= listBox3.Items.Count; z++)
+                for(int y = 0; y < rnd; y++)
+                { 
+                    for (int z = 0; z < rnd; z++)
                     {
-                        Label[] labels3 = new Label[z];
-                        Label[] labels4 = new Label[3];
-                        labels3[z].Text = listBox3.GetItemText(listBox3.Items[z]);
-                        C = Convert.ToInt32(labels3[z].Text);
-                        labels4[0].Text = Convert.ToString(findDiscriminant(A, B, C));
-                        labels4[1].Text = Convert.ToString(findFirstX(A, B, C));
-                        labels4[2].Text = Convert.ToString(findSecondX(A, B, C));
-                        panel2.Controls.Add(labels[x]);
-                        panel2.Controls.Add(labels[y]);
-                        panel2.Controls.Add(labels[z]);
+                        Label label = new Label();
+                        label.Location = new Point(left, top);
+                        label.Size = new Size(800, 15);
+                        string coefficients = "A = " + listBox1.GetItemText(listBox1.Items[x]) + "; B = " + listBox2.GetItemText(listBox2.Items[y]) + "; C = " + listBox3.GetItemText(listBox3.Items[z]) + "; D = ";
+                        A = (int) listBox1.Items[x];
+                        B = (int) listBox2.Items[y];
+                        C = (int) listBox3.Items[z];
+                        string D = Convert.ToString(findDiscriminant(A, B, C));
+                        string X1 = Convert.ToString(findFirstX(A, B, C));
+                        string X2 = Convert.ToString(findSecondX(A, B, C));
+                        string results = D + "; X1 = " + X1 + "; X2 = " + X2 + ";";
+                        label.Text = coefficients + results;
+                        panel2.Controls.Add(label);
+
+                        top = top + 25;
+                        left = 3;
                     }
                 }
             }
