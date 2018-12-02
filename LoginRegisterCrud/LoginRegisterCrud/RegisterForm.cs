@@ -38,8 +38,7 @@ namespace LoginRegisterCrud
             textBox4.Enabled = false;
             textBox5.Enabled = false;
             textBox6.Enabled = false;
-            textBox7
-.Enabled = false;
+            textBox7.Enabled = false;
         }
 
         public void checkLastValidation(SqlCommand cmd, SqlConnection con)
